@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+    <header>
+        <nav class="top-bar">
+
+            <span class="mob-menu fas fa-bars" onclick="openMenuMob()"></span>
+
+            <a href="../index.html"><img class="logo" src="../imagenes/pictures/logoShutter1.webp" alt="logo"></a>
+
+            <div class="top-sesion">
+
+                <div class="top-nav-sesion-item"><a class="top-nav-sesion" href="#">Iniciar sesión</a></div>
+                <div class="top-nav-sesion-item"><a class="top-btn-registro" href="#">Regístrate</a></div>
+
+            </div>
+
+            <ul class="top-nav">
+                <span class="mob-close fas fa-window-close" onclick="closeMenuMob()"></span>
+                <li class="top-nav-item"><a class="top-nav-link" href="#">Categorias</a></li>
+                <li class="top-nav-item"><a class="top-nav-link" href="./galeria.html">Fotos</a></li>
+                <li class="top-nav-item"><a class="top-nav-link" href="#">Votar</a></li>
+                <li class="top-nav-item"><a class="top-nav-link" href="./topGallerie.html">Top 10 mejores fotografías</a></li>
+
+            </ul>
+
+        </nav>
+    </header>
+
+    <img class="register-imagen" src="../imagenes/pictures/picture1.webp" alt="picture">
+
+        <div class="register-container"> 
+            <div class="register-titles">
+                <h2 class="register-text">Registrarte</h2>
+                 <h3 class="register-text-2">Es rápido y fácil</h3>
+            </div>      
+        
+            <form class="register-section" onsubmit="return checkForm(this);">
+                <div class="row">
+                    <div class="col">
+                        <label class="comment">Nombre</label>
+                        <input id="name" class="input-text" type="text" placeholder="Nombre">
+                    </div>
+                    <div class="col">
+                        <label class="comment">Apellido</label>
+                        <input id="lastname" class="input-text" type="text" placeholder="Apellido">
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col">
+                        <label class="comment">Correo electrónico</label>
+                        <input id="mail" class="input-text" type="text" placeholder="Correo Electrónico">
+                    </div>
+                    <div class="col">
+                        <label class="comment">Contraseña</label>
+                        <input id="password" class="input-text" type="password" placeholder="Contraseña">
+                    </div>
+
+                    <div class="col">
+                        <input class="submit-btn" type="submit" value="Regístrate">
+                    </div>
+
+                </div>
+            </form>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/validator/13.1.1/validator.min.js"></script>
+    <script src="../JS/registro.js"></script>
+    <script src="../JS/main.js"></script>
+    
+</body>
+</html>

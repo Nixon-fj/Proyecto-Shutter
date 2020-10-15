@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Shutter/perfil</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="top-bar">
+
+            <span class="mob-menu fas fa-bars" onclick="openMenuMob()"></span>
+
+            <a href="../index.html"><img class="logo" src="../imagenes/pictures/logoShutter1.webp" alt="logo"></a>
+
+            <div class="top-sesion">
+
+                <div class="top-nav-sesion-item"><a class="top-nav-sesion" href="./login.html">Iniciar sesión</a></div>
+                <div class="top-nav-sesion-item"><a class="top-btn-registro" href="#">Regístrate</a></div>
+
+            </div>
+
+            <ul class="top-nav">
+                <span class="mob-close fas fa-window-close" onclick="closeMenuMob()"></span>
+                <li class="top-nav-item"><a class="top-nav-link" href="#">Categorias</a></li>
+                <li class="top-nav-item"><a class="top-nav-link" href="./galeria.html">Fotos</a></li>
+                <li class="top-nav-item"><a class="top-nav-link" href="#">Votar</a></li>
+                <li class="top-nav-item"><a class="top-nav-link" href="./topGallerie.html">Top 10 mejores
+                        fotografías</a></li>
+
+            </ul>
+
+        </nav>
+    </header>
+
+    <!-- info-Perfil -->
+    <section class="perfil-section">
+        <a class="perfil-section-img">
+            <img class="perfil-section-img-tama" src="../imagenes/imgPerfil/p.jpg" alt="">
+        </a>
+        <ul class="perfil-section-text">
+            <li class="perfil-text-section">
+                <h2 class="perfil-text-section-item">Nombre de Usuario</h2>
+            </li>
+            <li class="perfil-text-section">
+                <h2 class="perfil-text-section-item">Informacion:</h2>
+            </li>
+            <li class="perfil-text-section">
+                <p class="perfil-text-section-item">Lorem ipsun</p>
+            </li>
+            <li class="perfil-text-section">
+                <h2 class="perfil-text-section-item">Fotos subidas:</h2>
+            </li>
+            <li class="perfil-text-section">
+                <h2 class="perfil-text-section-item">9</h2>
+            </li>
+        </ul>
+    </section>
+
+    <!-- fotos-perfil -->
+    <section class="perfil-section-imgs">
+        <ul>
+            <li class="perfil-imagenes-li"><a href="#img1"><img class="perfil-imagenes"
+                        src="../imagenes/imgPerfil/img-1.jpg"></a></li>
+            <li class="perfil-imagenes-li"><a href="#img2"><img class="perfil-imagenes"
+                        src="../imagenes/imgPerfil/img-2.jpg"></a></li>
+            <li class="perfil-imagenes-li"><a href="#img3"><img class="perfil-imagenes"
+                        src="../imagenes/imgPerfil/img-3.jpg"></a></li>
+            <li class="perfil-imagenes-li"><a href="#img4"><img class="perfil-imagenes"
+                        src="../imagenes/imgPerfil/img-4.jpg"></a></li>
+            <li class="perfil-imagenes-li"><a href="#img5"><img class="perfil-imagenes"
+                        src="../imagenes/imgPerfil/img-5.jpg"></a></li>
+            <li class="perfil-imagenes-li"><a href="#img6"><img class="perfil-imagenes"
+                        src="../imagenes/imgPerfil/img-6.jpg"></a></li>
+        </ul>
+    </section>
+
+    <!-- view-pictures -->
+    <div class="modal" id="img1">
+        <div class="imagen">
+            <a class="imagen a" href="#img6">&#60;</a>
+            <a href=""><img class="modal-img" src="../imagenes/imgPerfil/img-1.jpg"></a>
+            <a class="imagen a:nth-child(2)" href="#img2">></a>
+
+            <lu>
+                <li>
+                    <h2 class="h">Nobre foto</h2>
+                </li>
+                <li><a class="a">Fecha:19/2/2020</a></li>
+                <li><a class="a">Votos: 6 </a></li>
+                <li>
+                    <p class="p">Informacion: Arbol detras de mi casa</p>
+                </li>
+                <a href=""><b>Salir</b></a>
+
+            </lu>
+        </div>
+    </div>
+
+    <div class="modal" id="img2">
+        <div class="imagen">
+            <a class="imagen a" href="#img1">&#60;</a>
+            <a href=""><img class="modal-img" src="../imagenes/imgPerfil/img-2.jpg"></a>
+            <a class="imagen a:nth-child(2)" href="#img3">></a>
+
+            <lu>
+                <li>
+                    <h2 class="h">Nobre foto</h2>
+                </li>
+                <li><a class="a">Fecha:1/4/2020</a></li>
+                <li><a class="a">Votos: 3 </a></li>
+                <li>
+                    <p class="p">Informacion: Atbol detras de mi casa</p>
+                </li>
+                <a href=""><b>Salir</b></a>
+
+            </lu>
+        </div>
+    </div>
+
+    <div class="modal" id="img3">
+        <div class="imagen">
+            <a class="imagen a" href="#img2">&#60;</a>
+            <a href=""><img class="modal-img" src="../imagenes/imgPerfil/img-3.jpg"></a>
+            <a class="imagen a:nth-child(2)" href="#img4">></a>
+
+            <lu>
+                <li>
+                    <h2 class="h">Nobre foto</h2>
+                </li>
+                <li><a class="a">Fecha:10/5/2020</a></li>
+                <li><a class="a">Votos: 10 </a></li>
+                <li>
+                    <p class="p">Informacion: Atbol detras de mi casa</p>
+                </li>
+                <a href=""><b>Salir</b></a>
+
+            </lu>
+        </div>
+    </div>
+
+    <div class="modal" id="img4">
+        <div class="imagen">
+            <a class="imagen a" href="#img3">&#60;</a>
+            <a href=""><img class="modal-img" src="../imagenes/imgPerfil/img-4.jpg"></a>
+            <a class="imagen a:nth-child(2)" href="#img5">></a>
+
+            <lu>
+                <li>
+                    <h2 class="h">Nobre foto</h2>
+                </li>
+                <li><a class="a">Fecha:19/6/2020</a></li>
+                <li><a class="a">Votos: 9 </a></li>
+                <li>
+                    <p class="p">Informacion: Atbol detras de mi casa</p>
+                </li>
+                <a href=""><b>Salir</b></a>
+
+            </lu>
+        </div>
+    </div>
+
+    <div class="modal" id="img5">
+        <div class="imagen">
+            <a class="imagen a" href="#img4">&#60;</a>
+            <a href=""><img class="modal-img" src="../imagenes/imgPerfil/img-5.jpg"></a>
+            <a class="imagen a:nth-child(2)" href="#img6">></a>
+
+            <lu>
+                <li>
+                    <h2 class="h">Nobre foto</h2>
+                </li>
+                <li><a class="a">Fecha:20/7/2020</a></li>
+                <li><a class="a">Votos: 6 </a></li>
+                <li>
+                    <p class="p">Informacion: Atbol detras de mi casa</p>
+                </li>
+                <a href=""><b>Salir</b></a>
+
+            </lu>
+        </div>
+    </div>
+
+    <div class="modal" id="img6">
+        <div class="imagen">
+            <a class="imagen a" href="#img5">&#60;</a>
+            <a href=""><img class="modal-img" src="../imagenes/imgPerfil/img-6.jpg"></a>
+            <a class="imagen a:nth-child(2)" href="#img1">></a>
+
+            <lu>
+                <li>
+                    <h2 class="h">Nobre foto</h2>
+                </li>
+                <li><a class="a">Fecha:5/8/2020</a></li>
+                <li><a class="a">Votos: 2 </a></li>
+                <li>
+                    <p class="p">Informacion: Atbol detras de mi casa</p>
+                </li>
+                <a href=""><b>Salir</b></a>
+
+            </lu>
+        </div>
+    </div>
+
+    <script src="../JS/main.js"></script>
+
+</body>
+
+</html>

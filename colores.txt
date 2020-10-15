@@ -1,0 +1,4 @@
+verde-agua #2E848D
+celeste #93C7D4
+rojo-oscuro #951215
+rojo-claro #C82019

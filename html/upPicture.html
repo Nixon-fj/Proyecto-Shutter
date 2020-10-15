@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Shutter/up-picture</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="../CSS/style.css">
+
+</head>
+
+<body>
+    <header>
+        <nav class="top-bar">
+
+            <span class="mob-menu fas fa-bars" onclick="openMenuMob()"></span>
+
+            <a href="../index.html"><img class="logo" src="../imagenes/pictures/logoShutter1.webp" alt="logo"></a>
+
+            <div class="top-sesion">
+
+                <div class="top-nav-sesion-item"><a class="top-nav-sesion" href="#">Iniciar sesión</a></div>
+                <div class="top-nav-sesion-item"><a class="top-btn-registro" href="#">Regístrate</a></div>
+
+            </div>
+
+            <ul class="top-nav">
+                <span class="mob-close fas fa-window-close" onclick="closeMenuMob()"></span>
+                <li class="top-nav-item"><a class="top-nav-link" href="#">Categorias</a></li>
+                <li class="top-nav-item"><a class="top-nav-link" href="./galeria.html">Fotos</a></li>
+                <li class="top-nav-item"><a class="top-nav-link" href="#">Votar</a></li>
+                <li class="top-nav-item"><a class="top-nav-link" href="./topGallerie.html">Top 10 mejores
+                        fotografías</a></li>
+
+            </ul>
+
+        </nav>
+    </header>
+    <div class="container-up-picture">
+
+        <img class="up-picture-imagen" src="../imagenes/pictures/picture1.webp" alt="picture">
+
+        <p class="up-title">Formulario para subir las fotografías del concurso</p>
+        <form class="form-up-picture" onsubmit="return checkForm(this);">
+
+            <label class="comment" for="comment">Nombre completo</label>
+            <div class="col">
+                <input id="name" class="input-text" type="text" placeholder="Nombre">
+            </div>
+
+            <label class="comment" for="comment">Titulo</label>
+            <div class="col">
+                <input id="picture-title" class="input-text" type="text" placeholder="Titulo de imagen">
+            </div>
+
+            <label class="comment" for="comment">Descripción</label>
+            <div class="row">
+
+                <textarea id="descrip-picture" class="text-area" name="" id="" cols="20" rows="5" type="text" placeholder="Descripción"></textarea>
+            </div>
+
+            <label class="comment" for="comment">Correo electrónico</label>
+            <div class="col">
+
+                <input id="mail" class="input-text" type="text" placeholder="Correo electrónico">
+            </div>
+
+            <label class="comment" for="comment">Añadir fotografía</label><br>
+
+            <input id="file-picture" class="file-up" type="file" name="imagen" accept="image/*">
+
+            <br><label class="comment" for="comment">Categorias</label><br>
+
+            <select id="category" class="select-bar" name="Categoria">
+
+                <option value="defaul">Seleccione una Categoria</option>
+                <option value="retrato">Retrato</option>
+                <option value="paisajismo">paisajismo</option>
+                <option value="moda">moda</option>
+                <option value="naturaleza">naturaleza</option>
+
+            </select>
+
+            <div class="row">
+
+                <input class="submit-btn" type="submit" value="Enviar">
+
+            </div>
+
+        </form>
+    </div>
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/validator/13.1.1/validator.min.js"></script>
+<script src="../JS/up-picture.js"></script>
+<script src="../JS/main.js"></script>
+
+</html>

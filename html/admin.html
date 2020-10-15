@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Shutter/admin</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+
+        <nav class="top-bar">
+
+            <span class="mob-menu fas fa-bars" onclick="openMenuMob()"></span>
+
+            <a href="../index.html"><img class="logo" src="../imagenes/pictures/logoShutter1.webp" alt="logo"></a>
+
+            <div class="top-sesion">
+
+                <div class="top-nav-sesion-item"><a class="top-nav-sesion" href="./login.html">Iniciar sesión</a></div>
+                <div class="top-nav-sesion-item"><a class="top-btn-registro" href="#">Regístrate</a></div>
+
+            </div>
+
+            <ul class="top-nav">
+                <span class="mob-close fas fa-window-close" onclick="closeMenuMob()"></span>
+                <li class="top-nav-item"><a class="top-nav-link" href="#">Categorias</a></li>
+                <li class="top-nav-item"><a class="top-nav-link" href="./galeria.html">Fotos</a></li>
+                <li class="top-nav-item"><a class="top-nav-link" href="#">Votar</a></li>
+                <li class="top-nav-item"><a class="top-nav-link" href="./topGallerie.html">Top 10 mejores
+                        fotografías</a></li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+    <!-- Header -->
+
+    <section class="contact-section">
+        <form class="contact-form">
+            <div class="row">
+                <div class="col">
+                    <p class="text">Nombre</p>
+                    <input class="input-text" type="text" placeholder="Juan Carlos Campos" readonly>
+                </div>
+                <div class="col">
+                    <p class="text">ID</p>
+                    <input class="input-text" type="text" placeholder="A1" readonly>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p class="text">Votos</p>
+                    <input class="input-text" type="text" placeholder="125" readonly>
+                </div>
+                <div class="col">
+                    <p class="text">Fotos</p>
+                    <input class="input-text" type="text" placeholder="21" readonly>
+                </div>
+            </div>
+        </form>
+    </section>
+
+    <div class="container scroll">
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Votos</th>
+                </tr>
+            </thead>
+
+            <tr>
+                <td>A1</td>
+                <td>125</td>
+            </tr>
+            <tr>
+                <td>A2</td>
+                <td>19</td>
+            </tr>
+            <tr>
+                <td>A3</td>
+                <td>13</td>
+            </tr>
+            <tr>
+                <td>A4</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>A5</td>
+                <td>1</td>
+            </tr>
+        </table>
+    </div>
+
+    <script src="../JS/main.js"></script>
+</body>
+
+</html>

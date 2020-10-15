@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Shutter/login</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+
+        <nav class="top-bar">
+
+            <span class="mob-menu fas fa-bars" onclick="openMenuMob()"></span>
+
+            <a href="../index.html"><img class="logo" src="../imagenes/pictures/logoShutter1.webp" alt="logo"></a>
+
+            <div class="top-sesion">
+
+                <div class="top-nav-sesion-item"><a class="top-nav-sesion" href="./login.html">Iniciar sesión</a></div>
+                <div class="top-nav-sesion-item"><a class="top-btn-registro" href="#">Regístrate</a></div>
+
+            </div>
+
+            <ul class="top-nav">
+                <span class="mob-close fas fa-window-close" onclick="closeMenuMob()"></span>
+                <li class="top-nav-item"><a class="top-nav-link" href="#">Categorias</a></li>
+                <li class="top-nav-item"><a class="top-nav-link" href="./galeria.html">Fotos</a></li>
+                <li class="top-nav-item"><a class="top-nav-link" href="#">Votar</a></li>
+                <li class="top-nav-item"><a class="top-nav-link" href="../html/topGallerie.html">Top 10 mejores fotografías</a></li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+    <!-- Header -->
+
+    <img class="login-image" src="../imagenes/pictures/pantallaLogin.webp" alt="picture">
+
+    <div class="login-container">
+        <h2 class="login-text">Inicia sesión en Shutter</h2>
+        <a class="facebook-btn" href="#"><i class="fab fa-facebook-f"></i><span class="btn-label">Connect with
+                Facebook</span></a>
+        <a class="google-btn" href="#"><i class="fab fa-google"></i><span class="btn-label">Signed in with
+                Google</span></a>
+        <h2 class="login-text">Or</h2>
+
+        <form class="contact-form" onsubmit="return checkForm(this);">
+            <div class="row">
+                <p class="input-title">Nombre de usuario o e-mail</p>
+                <input id="user" class="input-text" type="text">
+            </div>
+            <div class="row">
+                <p class="input-title">Contraseña</p>
+                <input id="password" class="input-text" type="password">
+            </div>
+            <p class="password-text"><a class="password-link" href="./recuperación-password.html">¿Olvidó la contraseña?</a></p>
+            <div class="row">
+                <input class="submit-btn" type="submit" value="Regístrate">
+            </div>
+            
+            <p class="password-text"><a class="password-link" href="#">Recuérdame</a></p>
+        </form>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/validator/13.1.1/validator.min.js"></script>
+    <script src="../JS/login.js"></script>
+    <script src="../JS/main.js"></script>
+
+</body>
+
+</html>
